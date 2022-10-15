@@ -1,0 +1,232 @@
+body {
+  height: 635vh;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  width: 92%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-bar {
+  height: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2.8rem;
+  background-color: #1428A0;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.top-bar_navs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.top-bar_navs a {
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: white;
+}
+
+.top-bar button {
+  font-weight: bold;
+  color: blue;
+  background-color: white;
+  border-radius: 13px;
+  display: flex;
+  align-items: center;
+  height: 1.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.2rem;
+  margin: 0;
+}
+
+.add-icon {
+  padding-bottom: 2px;
+}
+/* 부모요소 align-items를 center로 했기 때문에 vertical-align으로 요소 위치 변경 안먹힘(그래서 padding-bottom값으로 이동시켰음) */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6.5rem;
+}
+
+.header img {
+  height: 2.5rem;
+}
+
+.header_ceneter-navs {
+  font-weight: bold;
+  display: flex;
+  gap: 3.5rem;
+}
+
+.header_ceneter-navs a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: black;
+}
+
+.header_right-navs {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.header_right-navs a{
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: black;
+}
+
+.header_right-navs button {
+  height: 2.5rem;
+  border: 0.5px solid #e4e4e4;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.header_right-navs button:hover {
+  background-color: #1428A0;
+  color: white;
+  transition: 0.2s;
+}
+
+.top-table {
+  height: 33rem;
+  display: grid;
+  grid-template-columns: 7.5fr 2.5fr;
+  grid-template-rows: 8fr 2fr;
+  gap: 0.5rem;
+  grid-template-areas: 
+  'a b'
+  'a c';
+}
+
+.top-table_left-big-box {
+  font-size: 2rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  font-weight: bold;
+  color: white;
+  background-image: url(/images/solarpower.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  grid-area: a;
+  border-radius: 5px;
+  gap: 0.7rem;
+}
+
+.top-table_left-big-box:hover {
+  background-size: 120%;
+  transition: 0.2s;
+}
+
+
+
+.top-table_left-big-box span:nth-child(2) {
+  font-size: 1rem;
+}
+
+.top-table_left-big-box button {
+  font-weight: bold;
+  padding: 0.7rem;
+  width: 9rem;
+  color: white;
+  background-color: transparent;
+  border: 3px solid white;
+  border-radius: 5px;
+}
+
+.top-table_left-big-box button:hover {
+  background-color: white;
+  color: black;
+  transition: 0.2s;
+}
+
+.top-table_rsrc-cen {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+  border:transparent;
+  grid-area: b;
+  background-image: url(/images/stairs.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-weight: bold;
+  color: white;
+  font-size: 1.3rem;
+  border-radius: 5px;
+}
+
+  /* 이거 처음 알았다. 앞으로 이미지 넣을 일 많으니깐 꼭 숙지 */
+  /* 만약 배경이 아니라 img 태그로 안에 넣을 경우 object-fit:cover;을 통해서 부모에 딱 맞게 이미지 크기를 설정할 수 있다. */
+  
+.top-table_rsrc-cen:hover {
+  background-size: 120%;
+  transition:  0.2s;
+}
+
+/* 배경 이미지 크기 hover 시 확대할 때 */
+
+.top-table_rsrc-cen div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.top-table_rsrc-cen div b:nth-child(1) {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+.arrow-icon {
+  vertical-align: -4px;
+}
+/* 구글폰트에서 span으로 아이콘 가져온 경우 class명이 전부 똑같기 때문에 따로 class명을 하나 더 지어줘야한다. 기존에 받았던 class명을 변경하면 아이콘 인식 못함 */
+
+.top-table_rsrc-cen div b:nth-child(2):hover 
+.arrow-icon {
+  transform: translateX(3px);
+  transition: 0.3s;
+}
+
+/* 이거 태그선택자하고, hover 시 다른 요소 움직일 때 */
+
+.top-table_stock {
+  border: transparent;
+  grid-area: c;
+  border-radius: 5px;
+  background-color: #1C9C9E;
+  color: white;
+  font-weight: bold;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-table_stock a {
+  color: white;
+  font-weight: bold;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
