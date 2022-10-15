@@ -337,6 +337,8 @@ body {
   margin-top: 1rem;
 }
 
+/* 이렇게 비슷한 형식이 여러개면 복붙한 다음 class 이름만 바꿔주면 빠르게 생성 가능하기도 함 */
+
 .our-business_box1:hover {
   transform: translateY(-0.3rem);
   transition: 0.3s;
@@ -352,4 +354,103 @@ body {
 .our-business_box4:hover {
   transform: translateY(-0.3rem);
   transition: 0.3s;
+}
+
+.activity {
+  margin-top: 4.5rem;
+  text-transform: uppercase;
+  font-size: 2.7rem;
+  font-family: sans-serif;
+}
+
+.esg-activity {
+  margin-top: 2rem;
+  height: 75rem;
+  display: grid;
+  grid-template-columns: 2.5fr 7.5fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 1rem;
+  grid-template-areas: 
+  'a a'
+  'b c'
+  ;
+}
+
+.esg-activity div {
+  border-radius: 5px;
+}
+
+.esg-activity_top-big-box {
+  display: flex;
+  align-items: flex-end;
+  font-weight: bold;
+  color: white;
+  padding: 2rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(/images/forest.jpg);
+  grid-area: a;
+}
+
+.esg-activity_bot-left-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-weight: bold;
+  color: white;
+  padding: 2rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(/images/laptop.jpg);
+  grid-area: b;
+}
+
+.esg-activity_bot-right-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-weight: bold;
+  color: white;
+  padding: 2rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(/images/glacier.jpg);
+  grid-area: c;
+}
+
+.esg-activity_top-big-box:hover {
+  background-size: 120%;
+}
+
+.esg-activity_bot-left-box:hover {
+  background-size: 120%;
+}
+
+.esg-activity_bot-right-box:hover {
+  background-size: 120%;
+}
+
+.esg-activity_top-big-box b {
+  font-size: 2rem;
+}
+
+.esg-activity_bot-left-box b {
+  font-size: 2rem;
+}
+
+.esg-activity_bot-left-box span{
+  font-size: 0.8rem;
+  margin-top: 1rem;
+}
+
+.esg-activity_bot-right-box b {
+  font-size: 2rem;
+}
+
+.esg-activity_bot-right-box span {
+  font-size: 0.8rem;
+  margin-top: 1rem;
 }
