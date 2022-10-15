@@ -230,3 +230,126 @@ body {
   text-decoration: none;
 }
 
+.business {
+  margin-top: 4.5rem;
+  text-transform: uppercase;
+  font-size: 2.7rem;
+  font-family: sans-serif;
+}
+
+.our-business {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  height: 33rem;
+}
+
+.our-business div {
+  border-radius: 5px;
+}
+
+.our-business_box1 {
+  background-image: url(/images/dubai.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-weight: bold;
+}
+
+.our-business_box1 b {
+  font-size: 2rem;
+}
+
+.our-business_box1 span {
+  font-size: 0.8rem;
+  margin-top: 1rem;
+}
+
+.our-business_box2 {
+  background-image: url(/images/solar-panel.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-weight: bold;
+}
+
+.our-business_box2 b {
+  font-size: 2rem;
+}
+
+.our-business_box2 span {
+  font-size: 0.8rem;
+  margin-top: 1rem;
+}
+
+.our-business_box3 {
+  background-image: url(/images/fashion.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-weight: bold;
+}
+
+.our-business_box3 b {
+  font-size: 2rem;
+}
+
+.our-business_box3 span {
+  font-size: 0.8rem;
+  margin-top: 1rem;
+}
+
+.our-business_box4 {
+  background-image: url(/images/panda.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-weight: bold;
+}
+
+.our-business_box4 b {
+  font-size: 2rem;
+}
+
+.our-business_box4 span {
+  font-size: 0.8rem;
+  margin-top: 1rem;
+}
+
+.our-business_box1:hover {
+  transform: translateY(-0.3rem);
+  transition: 0.3s;
+}
+.our-business_box2:hover {
+  transform: translateY(-0.3rem);
+  transition: 0.3s;
+}
+.our-business_box3:hover {
+  transform: translateY(-0.3rem);
+  transition: 0.3s;
+}
+.our-business_box4:hover {
+  transform: translateY(-0.3rem);
+  transition: 0.3s;
+}
