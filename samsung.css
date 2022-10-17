@@ -209,6 +209,20 @@ body {
 }
 
 /* 이거 태그선택자하고, hover 시 다른 요소 움직일 때 */
+/* hover 시 다른 요소에 변화를 주고 싶을 때*/
+
+/*박스가 컨테이너와 형제일 경우
+.container:hover ~ .box
+
+박스가 컨테이너의 1차 자식일 경우
+.container:hover > .box
+
+박스가 컨테이너의 자손일 경우(몇 차인지 상관 없이)
+.container:hover .box
+
+박스가 컨테이너의 밖에 있을 경우
+.container:hover +.box*/
+
 
 .top-table_stock {
   border: transparent;
