@@ -209,10 +209,27 @@ body {
 }
 
 /* 이거 태그선택자하고, hover 시 다른 요소 움직일 때 */
+<<<<<<< HEAD
 /* 서로 형제관계일 때 ~ */
 /* 서로 부모 자식관게일 때(1차) > */
 /* 그냥 포함되어 있는거면 아무것도 안써줘도 됨*/
 /* 그냥 서로 다른 곳에 분리되어 있으면 + */
+=======
+/* hover 시 다른 요소에 변화를 주고 싶을 때*/
+
+/*박스가 컨테이너와 형제일 경우
+.container:hover ~ .box
+
+박스가 컨테이너의 1차 자식일 경우
+.container:hover > .box
+
+박스가 컨테이너의 자손일 경우(몇 차인지 상관 없이)
+.container:hover .box
+
+박스가 컨테이너의 밖에 있을 경우
+.container:hover +.box*/
+
+>>>>>>> f7aa9208550a2212a8f4e64e3a79160ac4aaa1b1
 
 .top-table_stock {
   border: transparent;
