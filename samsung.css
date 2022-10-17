@@ -209,6 +209,10 @@ body {
 }
 
 /* 이거 태그선택자하고, hover 시 다른 요소 움직일 때 */
+/* 서로 형제관계일 때 ~ */
+/* 서로 부모 자식관게일 때(1차) > */
+/* 그냥 포함되어 있는거면 아무것도 안써줘도 됨*/
+/* 그냥 서로 다른 곳에 분리되어 있으면 + */
 
 .top-table_stock {
   border: transparent;
@@ -453,4 +457,265 @@ body {
 .esg-activity_bot-right-box span {
   font-size: 0.8rem;
   margin-top: 1rem;
+}
+
+
+.newroom-title {
+  margin-top: 4.5rem;
+  text-transform: uppercase;
+  font-size: 2.7rem;
+  font-family: sans-serif;
+}
+
+.newsroom-main {
+  margin-top: 2rem;
+  padding: 4rem;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+  background-color: #1428A0;
+  border-radius: 10px;
+}
+
+.newroom_btns {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.newroom_btns button {
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid #3A4FD1;
+  background-color: #1428A0;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+.newsroom_btn1 {
+  position: relative;
+  overflow: hidden;
+}
+
+.newsroom_btn1 span {
+  position: relative;
+  z-index: 2;
+}
+/* postion relative로 주고 zindex 2 / zindex 값이 높을수록 위에 */
+
+.newsroom_btn1::before {
+  position: absolute;
+  content: '';
+  width: 150%;
+  height: 150%;
+  background-color: white;
+  top: 100%;
+  left: -25%;
+  z-index: 1;
+  border-radius: 50%;
+}
+
+.newsroom_btn1:hover::before {
+  transition: 0.7s;
+  top: -25%;
+}
+.newsroom_btn1:hover{
+  color: #1428A0;
+  transition: 0.7s;
+}
+
+.newsroom_btn2 {
+  position: relative;
+  overflow: hidden;
+}
+
+.newsroom_btn2 span {
+  position: relative;
+  z-index: 2;
+}
+/* postion relative로 주고 zindex 2 / zindex 값이 높을수록 위에 */
+
+.newsroom_btn2::before {
+  position: absolute;
+  content: '';
+  width: 150%;
+  height: 150%;
+  background-color: white;
+  top: 100%;
+  left: -25%;
+  z-index: 1;
+  border-radius: 50%;
+}
+
+.newsroom_btn2:hover::before {
+  transition: 0.7s;
+  top: -25%;
+}
+.newsroom_btn2:hover{
+  color: #1428A0;
+  transition: 0.7s;
+}
+
+.newsroom_btn3 {
+  position: relative;
+  overflow: hidden;
+}
+
+.newsroom_btn3 span {
+  position: relative;
+  z-index: 2;
+}
+/* postion relative로 주고 zindex 2 / zindex 값이 높을수록 위에 */
+
+.newsroom_btn3::before {
+  position: absolute;
+  content: '';
+  width: 150%;
+  height: 150%;
+  background-color: white;
+  top: 100%;
+  left: -25%;
+  z-index: 1;
+  border-radius: 50%;
+}
+
+.newsroom_btn3:hover::before {
+  transition: 0.7s;
+  top: -25%;
+}
+.newsroom_btn3:hover{
+  color: #1428A0;
+  transition: 0.7s;
+}
+
+.newsroom_btn4 {
+  position: relative;
+  overflow: hidden;
+}
+
+.newsroom_btn4 span {
+  position: relative;
+  z-index: 2;
+}
+/* postion relative로 주고 zindex 2 / zindex 값이 높을수록 위에 */
+
+.newsroom_btn4::before {
+  position: absolute;
+  content: '';
+  width: 150%;
+  height: 150%;
+  background-color: white;
+  top: 100%;
+  left: -25%;
+  z-index: 1;
+  border-radius: 50%;
+}
+
+.newsroom_btn4:hover::before {
+  transition: 0.7s;
+  top: -25%;
+}
+.newsroom_btn4:hover{
+  color: #1428A0;
+  transition: 0.7s;
+}
+
+.newsroom_btn5 {
+  position: relative;
+  overflow: hidden;
+}
+
+.newsroom_btn5 span {
+  position: relative;
+  z-index: 2;
+}
+/* postion relative로 주고 zindex 2 / zindex 값이 높을수록 위에 */
+
+.newsroom_btn5::before {
+  position: absolute;
+  content: '';
+  width: 150%;
+  height: 150%;
+  background-color: white;
+  top: 100%;
+  left: -25%;
+  z-index: 1;
+  border-radius: 50%;
+}
+
+.newsroom_btn5:hover::before {
+  transition: 0.7s;
+  top: -25%;
+}
+.newsroom_btn5:hover{
+  color: #1428A0;
+  transition: 0.7s;
+}
+
+.newsroom_btn6 {
+  position: relative;
+  overflow: hidden;
+}
+
+.newsroom_btn6 span {
+  position: relative;
+  z-index: 2;
+}
+/* postion relative로 주고 zindex 2 / zindex 값이 높을수록 위에 */
+
+.newsroom_btn6::before {
+  position: absolute;
+  content: '';
+  width: 150%;
+  height: 150%;
+  background-color: white;
+  top: 100%;
+  left: -25%;
+  z-index: 1;
+  border-radius: 50%;
+}
+
+.newsroom_btn6:hover::before {
+  transition: 0.7s;
+  top: -25%;
+}
+.newsroom_btn6:hover{
+  color: #1428A0;
+  transition: 0.7s;
+}
+
+.newsroom_btn7 {
+  position: relative;
+  overflow: hidden;
+}
+
+.newsroom_btn7 span {
+  position: relative;
+  z-index: 2;
+}
+/* postion relative로 주고 zindex 2 / zindex 값이 높을수록 위에 */
+
+.newsroom_btn7::before {
+  position: absolute;
+  content: '';
+  width: 150%;
+  height: 150%;
+  background-color: white;
+  top: 100%;
+  left: -25%;
+  z-index: 1;
+  border-radius: 50%;
+}
+
+.newsroom_btn7:hover::before {
+  transition: 0.7s;
+  top: -25%;
+}
+.newsroom_btn7:hover{
+  color: #1428A0;
+  transition: 0.7s;
 }
