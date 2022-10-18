@@ -209,12 +209,12 @@ body {
 }
 
 /* 이거 태그선택자하고, hover 시 다른 요소 움직일 때 */
-<<<<<<< HEAD
+
 /* 서로 형제관계일 때 ~ */
 /* 서로 부모 자식관게일 때(1차) > */
 /* 그냥 포함되어 있는거면 아무것도 안써줘도 됨*/
 /* 그냥 서로 다른 곳에 분리되어 있으면 + */
-=======
+
 /* hover 시 다른 요소에 변화를 주고 싶을 때*/
 
 /*박스가 컨테이너와 형제일 경우
@@ -228,8 +228,6 @@ body {
 
 박스가 컨테이너의 밖에 있을 경우
 .container:hover +.box*/
-
->>>>>>> f7aa9208550a2212a8f4e64e3a79160ac4aaa1b1
 
 .top-table_stock {
   border: transparent;
@@ -522,7 +520,7 @@ body {
   position: relative;
   z-index: 2;
 }
-/* postion relative로 주고 zindex 2 / zindex 값이 높을수록 위에 */
+/* postion relative로 주고 z-index 2 / z-index 값이 높을수록 위에 */
 
 .newsroom_btn1::before {
   position: absolute;
@@ -536,13 +534,15 @@ body {
   border-radius: 50%;
 }
 
+/* 되돌아오는 것도 transition 줄려면 이동하는 객체에다가 transition 넣기*/
+
 .newsroom_btn1:hover::before {
   transition: 0.7s;
   top: -25%;
 }
 .newsroom_btn1:hover{
-  color: #1428A0;
   transition: 0.7s;
+  color: #1428A0;
 }
 
 .newsroom_btn2 {
@@ -554,7 +554,6 @@ body {
   position: relative;
   z-index: 2;
 }
-/* postion relative로 주고 zindex 2 / zindex 값이 높을수록 위에 */
 
 .newsroom_btn2::before {
   position: absolute;
@@ -586,7 +585,6 @@ body {
   position: relative;
   z-index: 2;
 }
-/* postion relative로 주고 zindex 2 / zindex 값이 높을수록 위에 */
 
 .newsroom_btn3::before {
   position: absolute;
@@ -618,7 +616,6 @@ body {
   position: relative;
   z-index: 2;
 }
-/* postion relative로 주고 zindex 2 / zindex 값이 높을수록 위에 */
 
 .newsroom_btn4::before {
   position: absolute;
@@ -650,7 +647,6 @@ body {
   position: relative;
   z-index: 2;
 }
-/* postion relative로 주고 zindex 2 / zindex 값이 높을수록 위에 */
 
 .newsroom_btn5::before {
   position: absolute;
@@ -682,7 +678,6 @@ body {
   position: relative;
   z-index: 2;
 }
-/* postion relative로 주고 zindex 2 / zindex 값이 높을수록 위에 */
 
 .newsroom_btn6::before {
   position: absolute;
@@ -714,7 +709,6 @@ body {
   position: relative;
   z-index: 2;
 }
-/* postion relative로 주고 zindex 2 / zindex 값이 높을수록 위에 */
 
 .newsroom_btn7::before {
   position: absolute;
@@ -732,7 +726,220 @@ body {
   transition: 0.7s;
   top: -25%;
 }
+
 .newsroom_btn7:hover{
-  color: #1428A0;
   transition: 0.7s;
+  color: #1428A0;
+}
+
+.newsroom-boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 80rem;
+  height: 23rem;
+  grid-gap: 3rem;
+  perspective: 1000px;
+}
+
+.newsroom-boxes > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  font-weight: bold;
+  color: white;
+}
+
+.newsroom_box1 {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: 0.5s;
+  transition-delay: 0.1s;
+}
+
+/* transfrom-style: preserve-3d; 이거 안 넣어주면 z이동도 안먹힘
+이거 무조건 넣어줘야 함 */
+
+.box1-front {
+  top: 0;
+  left: 10%;
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  background-color: tomato;
+  border-radius: 10px;
+  transform: translateZ(1px);
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.box1-front span:first-child {
+  font-size: 1.5rem;
+  padding: 0 2rem;
+}
+
+.box1-front span:last-child {
+  font-size: 1rem;
+  padding: 0 2rem;
+  margin-bottom: 2rem;
+}
+
+.box1-back {
+  top: 0;
+  left: 10%;
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  background-color: seagreen;
+  border-radius: 10px;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.box1-back span:first-child {
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+}
+
+.box1-back span:last-child {
+  font-size: 1rem;
+  padding: 0 2rem;
+  margin-bottom: 2rem;
+}
+
+.newsroom_box1:hover {
+  transform: rotateY(180deg);
+}
+
+.newsroom_box2 {
+  position: relative;
+  transition: 0.5s;
+  transition-delay: 0.1s;
+  transform-style: preserve-3d;
+}
+
+.box2-front {
+  top: 0;
+  left: 10%;
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  background-color: tomato;
+  border-radius: 10px;
+  transform: translateZ(1px);
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.box2-back {
+  top: 0;
+  left: 10%;
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  background-color: seagreen;
+  border-radius: 10px;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.box2-front span:first-child {
+  font-size: 1.5rem;
+  padding: 0 2rem;
+}
+
+.box2-front span:last-child {
+  font-size: 1rem;
+  padding: 0 2rem;
+  margin-bottom: 2rem;
+}
+
+.box2-back span:first-child {
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+}
+
+.box2-back span:last-child {
+  font-size: 1rem;
+  padding: 0 2rem;
+  margin-bottom: 2rem;
+}
+
+.newsroom_box2:hover {
+  transform: rotateY(180deg);
+}
+
+.newsroom_box3 {
+  position: relative;
+  transition: 0.5s;
+  transition-delay: 0.1s;
+  transform-style: preserve-3d;
+}
+
+.box3-front {
+  top: 0;
+  left: 10%;
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  background-color: tomato;
+  border-radius: 10px;
+  transform: translateZ(1px);
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.box3-back {
+  position: absolute;
+  top: 0;
+  left: 10%;
+  width: 80%;
+  height: 100%;
+  background-color: seagreen;
+  border-radius: 10px;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.newsroom_box3:hover {
+  transform: rotateY(180deg);
+}
+
+.box3-front span:first-child {
+  font-size: 1.5rem;
+  padding: 0 2rem;
+}
+
+.box3-front span:last-child {
+  font-size: 1rem;
+  padding: 0 2rem;
+  margin-bottom: 2rem;
+}
+
+.box3-back span:first-child {
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+}
+
+.box3-back span:last-child {
+  font-size: 1rem;
+  padding: 0 2rem;
+  margin-bottom: 2rem;
 }
